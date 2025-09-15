@@ -1,8 +1,31 @@
 package com.senai.infoa.dvdrental.models;
+import java.time.LocalDateTime;
 
 public class Country {
-    private Long id;
+    private int id;
+    private String country;
+    private LocalDateTime lastUpdate;
 
-    // TODO: adicionar atributos
+    public Country() {}
+
+    public Country(String country, LocalDateTime lastUpdate) {
+        this.country = country;
+        this.lastUpdate = lastUpdate;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public LocalDateTime getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(LocalDateTime lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
 }
-

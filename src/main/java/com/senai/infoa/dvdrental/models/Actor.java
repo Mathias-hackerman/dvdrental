@@ -2,7 +2,7 @@ package com.senai.infoa.dvdrental.models;
 import java.time.LocalDateTime;
 
 public class Actor {
-    private String id;
+    private int id;
     private String firstName;
     private String lastName;
     private LocalDateTime lastUpdate;
@@ -14,6 +14,8 @@ public class Actor {
         this.lastUpdate = lastUpdate;
     }
 
+
+    //Getters e Setters
     public String getFirstName(){
         return this.firstName;
     }
@@ -26,6 +28,13 @@ public class Actor {
     }
     public void setLastName(String lastName){
         this.lastName = lastName;
+    }
+
+    public LocalDateTime getlastUpdate(){
+        return this.lastUpdate;
+    }
+    public void setlastUpdate(LocalDateTime lastUpdate){
+        this.lastUpdate = lastUpdate;
     }
 
 }
