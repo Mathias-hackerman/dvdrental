@@ -20,8 +20,7 @@ public class Film {
     public Film() {}
 
     // Construtor com parâmetros
-    public Film(int id, String title, String description, LocalDate releaseYear, int languageId, double rentalDuration, double rentalRate, String length, double replacementCost, double rating, LocalDateTime lastUpdate, byte[] specialFeatures, String fullText) {
-        this.id = id;
+    public Film(String title, String description, LocalDate releaseYear, int languageId, double rentalDuration, double rentalRate, String length, double replacementCost, double rating, LocalDateTime lastUpdate, byte[] specialFeatures, String fullText) {
         this.title = title;
         this.description = description;
         this.releaseYear = releaseYear;
@@ -35,16 +34,7 @@ public class Film {
         this.specialFeatures = specialFeatures;
         this.fullText = fullText;
     }
-
     // Getters e Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getTitle() {
         return title;
     }
